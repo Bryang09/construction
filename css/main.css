@@ -153,4 +153,106 @@ body {
     opacity: 1;
   }
 }
+
+.who {
+  height: 70vh;
+  display: none;
+}
+
+.who .sectionImg {
+  width: 50vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.who .sectionImg .imgBorder {
+  height: 80%;
+  width: 60%;
+  margin: auto;
+  border: 3px solid #333;
+}
+
+.who .sectionImg .imgBorder .img {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(https://images.unsplash.com/photo-1528953030358-b0c7de371f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=603&q=80) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1528953030358-b0c7de371f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=603&q=80) no-repeat center center/cover;
+  -webkit-transform: translate(-1vw, 3vh);
+          transform: translate(-1vw, 3vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.who .sectionImg .imgBorder .img img {
+  height: 70px;
+}
+
+.who .text {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.who .text h5 {
+  color: #edd88f;
+  text-transform: uppercase;
+}
+
+.who .text h3 {
+  font-weight: 400;
+  width: 80%;
+}
+
+.who .stats {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #edd88f;
+  border-radius: 10px;
+  height: 12vh;
+}
+
+.who .stats .stat {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.who .stats .stat h2 {
+  margin: 1vh auto 0.5vh;
+  color: #fff;
+}
+
+.who .stats .stat h3 {
+  margin: 1vh auto;
+}
 /*# sourceMappingURL=main.css.map */
