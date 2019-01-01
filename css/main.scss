@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// LANDING
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+      no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4em;
+  }
+}
