@@ -1,9 +1,10 @@
+ScrollOut();
+
+// HERO
 const hero = document.querySelector("#hero");
 const heroBtn = document.querySelector("#heroButton");
 const section1 = document.querySelector("#section1");
 let fullScreen = true;
-
-console.log(fullScreen);
 
 heroBtn.addEventListener("click", heroDisplay);
 
@@ -19,4 +20,19 @@ function heroDisplay() {
   }
 }
 
-console.log(fullScreen);
+// WHO
+const who = document.querySelector("#who");
+const whoBtn = document.querySelector("#whoBtn");
+let whoDisplay = false;
+
+whoBtn.addEventListener("click", whoToggle);
+
+function whoToggle() {
+  whoDisplay = !whoDisplay;
+
+  if (whoDisplay === true) {
+    who.style.display = "flex";
+  } else {
+    who.style.display = "none";
+  }
+}

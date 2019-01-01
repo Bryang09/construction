@@ -254,5 +254,23 @@ body {
 
 .who .stats .stat h3 {
   margin: 1vh auto;
+  color: #fff;
+}
+
+[data-scroll] {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+  -webkit-transform: translateX(-200vw);
+          transform: translateX(-200vw);
 }
 /*# sourceMappingURL=main.css.map */
