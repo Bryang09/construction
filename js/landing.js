@@ -59,3 +59,12 @@ function whatToggle() {
     whatMouse.innerHTML = ``;
   }
 }
+
+// CONTACT
+
+const whyBtn = document.querySelector("#whyBtn");
+const why = document.querySelector("#why");
+const whyMouse = document.querySelector("#whyMouse");
+whyDisplay = false;
+
+whyBtn.addEventListener("click", whyToggle);
