@@ -63,8 +63,20 @@ function whatToggle() {
 // CONTACT
 
 const whyBtn = document.querySelector("#whyBtn");
-const why = document.querySelector("#why");
+const why = document.querySelector("#contact");
 const whyMouse = document.querySelector("#whyMouse");
 whyDisplay = false;
 
 whyBtn.addEventListener("click", whyToggle);
+
+function whyToggle() {
+  whyDisplay = !whyDisplay;
+
+  if (whyDisplay === true) {
+    why.style.display = "flex";
+    whyMouse.innerHTML = `<img src="https://img.icons8.com/ios/50/edd88f/mouse-scrolling-filled.png">`;
+  } else {
+    why.style.display = "none";
+    whyMouse.innerHTML = ``;
+  }
+}

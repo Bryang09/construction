@@ -6,8 +6,8 @@ body {
 
 .hero {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +29,8 @@ body {
   width: 60vw;
   -webkit-transform: translateX(-5vw);
           transform: translateX(-5vw);
+  -webkit-animation: hero 2s ease;
+          animation: hero 2s ease;
 }
 
 .hero h1 {
@@ -60,6 +62,24 @@ body {
   background: #edd88f;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+}
+
+@-webkit-keyframes hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .section1 {
