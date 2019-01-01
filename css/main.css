@@ -5,7 +5,7 @@ body {
 }
 
 .hero {
-  height: 80vh;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
   display: -webkit-box;
@@ -21,6 +21,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .hero .text {
@@ -66,10 +68,10 @@ body {
   margin: 0 auto;
   -webkit-transform: translateY(-10vh);
           transform: translateY(-10vh);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   border: 0.5px solid #eee;
+  -webkit-animation: section1 1s ease;
+          animation: section1 1s ease;
 }
 
 .section1 .opt {
@@ -132,5 +134,23 @@ body {
   color: #fff;
   background: #edd88f;
   border: 1px solid #edd88f;
+}
+
+@-webkit-keyframes section1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes section1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

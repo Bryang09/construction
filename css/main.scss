@@ -9,7 +9,7 @@ body {
 
 // LANDING
 .hero {
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5)),
     url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
       no-repeat center center / cover;
@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 1s ease;
 
   .text {
     width: 60vw;
@@ -59,8 +60,9 @@ body {
   width: 65vw;
   margin: 0 auto;
   transform: translateY(-10vh);
-  display: flex;
+  display: none;
   border: 0.5px solid #eee;
+  animation: section1 1s ease;
 
   .opt {
     width: 33.3%;
@@ -113,5 +115,14 @@ body {
       background: $primaryColor;
       border: 1px solid $primaryColor;
     }
+  }
+}
+
+@keyframes section1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
