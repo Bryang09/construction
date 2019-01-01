@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 body {
   margin: 0;
   padding: 0;
@@ -22,7 +23,114 @@ body {
           flex-direction: column;
 }
 
+.hero .text {
+  width: 60vw;
+  -webkit-transform: translateX(-5vw);
+          transform: translateX(-5vw);
+}
+
 .hero h1 {
   font-size: 4em;
+  color: #edd88f;
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+
+.hero h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.hero h5 {
+  border: 1px solid #edd88f;
+  width: 10vw;
+  text-align: center;
+  padding: 1vh 0;
+  border-radius: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hero h5:hover {
+  background: #edd88f;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.section1 {
+  height: 50vh;
+  width: 65vw;
+  margin: 0 auto;
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.5px solid #eee;
+}
+
+.section1 .opt {
+  width: 33.3%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+.section1 .opt h3 {
+  color: #b9b9b9;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.section1 .opt h4 {
+  width: 80%;
+  margin: 1vh auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.section1 .opt h5 {
+  border: 1px solid #eee;
+  padding: 1vh 2vw;
+  border-radius: 35px;
+}
+
+.section1 .opt h5:hover {
+  background: #edd88f;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  color: #fff;
+  border: 1px solid #edd88f;
+  cursor: pointer;
+}
+
+.section1 .opt2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 60, 138, 0.88))), url(https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center/cover;
+  background: linear-gradient(rgba(13, 60, 138, 0.88)), url(https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center/cover;
+}
+
+.section1 .opt2 h4 {
+  color: #fff;
+}
+
+.section1 .opt2 h5 {
+  color: #fff;
+  background: #edd88f;
+  border: 1px solid #edd88f;
 }
 /*# sourceMappingURL=main.css.map */
