@@ -36,3 +36,20 @@ function whoToggle() {
     who.style.display = "none";
   }
 }
+
+// WHAT
+const whatBtn = document.querySelector("#whatBtn");
+const what = document.querySelector("#what");
+whatDisplay = false;
+
+whatBtn.addEventListener("click", whatToggle);
+
+function whatToggle() {
+  whatDisplay = !whatDisplay;
+
+  if (whatDisplay === true) {
+    what.style.display = "flex";
+  } else {
+    what.style.display = "none";
+  }
+}
