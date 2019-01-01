@@ -110,6 +110,7 @@ body {
   border: 1px solid #eee;
   padding: 1vh 2vw;
   border-radius: 35px;
+  margin-bottom: 1.5vh;
 }
 
 .section1 .opt h5:hover {
@@ -134,6 +135,11 @@ body {
   color: #fff;
   background: #edd88f;
   border: 1px solid #edd88f;
+}
+
+.section1 img {
+  -webkit-animation: section1 2s ease;
+          animation: section1 2s ease;
 }
 
 @-webkit-keyframes section1 {

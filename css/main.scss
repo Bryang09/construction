@@ -91,6 +91,7 @@ body {
       border: 1px solid #eee;
       padding: 1vh 2vw;
       border-radius: 35px;
+      margin-bottom: 1.5vh;
 
       &:hover {
         background: $primaryColor;
@@ -116,6 +117,10 @@ body {
       background: $primaryColor;
       border: 1px solid $primaryColor;
     }
+  }
+
+  img {
+    animation: section1 2s ease;
   }
 }
 
