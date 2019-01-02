@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .hero {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
@@ -450,6 +445,12 @@ body {
   font-weight: 300;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 [data-scroll] {
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -465,5 +466,135 @@ body {
   opacity: 0;
   -webkit-transform: translateX(-200vw);
           transform: translateX(-200vw);
+}
+
+@media screen and (max-width: 1192px) {
+  .hero h5 {
+    padding: 1.5vh 1vw;
+  }
+  .section1 {
+    width: 75vw;
+  }
+  .section1 .opt h4 {
+    font-size: 1.3em;
+  }
+  .what .features {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero h5 {
+    padding: 1vh 2vw;
+    width: 20%;
+  }
+  .section1 {
+    width: 99vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+  }
+  .section1 .opt {
+    width: 100%;
+    height: 50vh;
+  }
+  .section1 .opt h4 {
+    font-size: 1.3em;
+  }
+  .who {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .who .sectionImg,
+  .who .text {
+    width: 100vw;
+  }
+  .who .sectionImg {
+    height: 40vh;
+  }
+  .who .text h3 {
+    margin: 0 auto;
+  }
+  .who .text h5 {
+    text-align: center;
+    font-size: 3em;
+    margin: 1.5vh 0;
+  }
+  .who .stats {
+    margin: 3vh auto;
+    height: 8vh;
+  }
+  .what {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .what .quote {
+    width: 80vw;
+    margin: 10vh auto;
+  }
+  .what .features {
+    width: 100vw;
+  }
+  .what .features p {
+    text-align: center;
+  }
+  .what .features .feature {
+    margin: 3vh auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .what .features .feature .text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero .text {
+    width: 70vw;
+  }
+  .who .stats .stat h3 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero h5 {
+    width: 40%;
+  }
+  .who .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .who .stats .stat {
+    width: 100%;
+    height: 10vh;
+  }
+  .what .quote .quoteBox {
+    width: 95%;
+  }
+  .contact h1 {
+    font-size: 1.5em;
+  }
+  .contact h3 {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

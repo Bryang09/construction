@@ -1,0 +1,60 @@
+$primaryColor: #edd88f;
+$secondaryColor: #b9b9b9;
+$blue: #061538e6;
+
+// LANDING
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8)),
+    url(https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+      no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s ease;
+
+  .text {
+    width: 60vw;
+    transform: translateX(-5vw);
+    animation: hero 2s ease;
+  }
+
+  h1 {
+    font-size: 4em;
+    color: $primaryColor;
+    font-weight: 400;
+    margin-bottom: 1vh;
+  }
+  h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  h5 {
+    border: 1px solid $primaryColor;
+    width: 10vw;
+    text-align: center;
+    padding: 1vh 0;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+      background: $primaryColor;
+      transition: 1s ease;
+    }
+  }
+}
+
+@keyframes hero {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

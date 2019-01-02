@@ -1,0 +1,101 @@
+$primaryColor: #edd88f;
+$secondaryColor: #b9b9b9;
+$blue: #061538e6;
+
+// WHAT SECTION
+.what {
+  display: none;
+  height: 70vh;
+  background: linear-gradient($blue),
+    url(https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+      no-repeat center center / cover;
+
+  .quote {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .quoteBox {
+      border: 5px solid #3b669c;
+      width: 80%;
+      height: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 300;
+        span {
+          margin: 0;
+        }
+      }
+
+      h5 {
+        color: #fff;
+        margin: 1vh auto;
+        font-weight: 400;
+        font-size: 1em;
+      }
+
+      #name {
+        color: $primaryColor;
+        text-transform: uppercase;
+        margin-top: 2vh;
+      }
+    }
+  }
+
+  .features {
+    width: 25vw;
+    background: #f0f0f0;
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 1.8em;
+      // text-align: center;
+    }
+
+    p {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .feature {
+      display: flex;
+      min-height: 15vh;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+
+      .icon {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .text {
+        width: 60%;
+
+        h3 {
+          font-size: 1.3em;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

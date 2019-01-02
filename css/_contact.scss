@@ -1,0 +1,32 @@
+$primaryColor: #edd88f;
+$secondaryColor: #b9b9b9;
+$blue: #061538e6;
+
+// CONTACT
+
+.contact {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9)),
+    url(https://images.pexels.com/photos/544965/pexels-photo-544965.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260)
+      no-repeat center center / cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+
+  h1 {
+    color: $primaryColor;
+    font-size: 2em;
+  }
+  h3 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.5em;
+
+    span {
+      font-weight: 300;
+    }
+  }
+}
