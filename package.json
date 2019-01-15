@@ -1,0 +1,23 @@
+{
+  "name": "construction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryang09/construction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryang09/construction/issues"
+  },
+  "homepage": "https://github.com/Bryang09/construction#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
